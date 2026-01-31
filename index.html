@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Via Bella Pizzaria - Cardápio</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f2f2f2; 
+            display: flex; 
+            justify-content: center;
+        }
+
+        .container { 
+            width: 100%; 
+            max-width: 500px; 
+            background-color: #ffffff; 
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* Cabeçalho com a Logo enviada */
+        .header { border-bottom: 5px solid #e31e24; padding-bottom: 20px; margin-bottom: 20px; }
+        .logo-img { width: 200px; height: auto; display: block; margin: 0 auto; }
+        
+        .endereco { font-size: 13px; color: #666; margin-top: 10px; line-height: 1.4; }
+
+        /* Categorias */
+        .categoria-titulo { 
+            background-color: #008241; 
+            color: white; 
+            padding: 10px; 
+            font-weight: bold; 
+            margin: 25px 0 15px; 
+            text-transform: uppercase;
+            border-radius: 4px;
+        }
+
+        /* Estilo dos Itens com Fotos */
+        .item-cardapio { 
+            border-bottom: 1px solid #eee; 
+            padding: 15px 0; 
+            text-align: left;
+            overflow: hidden;
+        }
+        .foto-pizza { 
+            width: 80px; 
+            height: 80px; 
+            float: left; 
+            margin-right: 15px; 
+            border-radius: 8px; 
+            object-fit: cover;
+            border: 1px solid #ddd;
+        }
+        .item-info { overflow: hidden; }
+        .nome-pizza { font-weight: bold; color: #e31e24; display: block; font-size: 16px; }
+        .preco { float: right; color: #008241; font-weight: bold; }
+        .descricao { font-size: 12px; color: #777; display: block; margin-top: 5px; }
+
+        /* Botões Fixos */
+        .btn-whats { 
+            display: block; 
+            background-color: #25d366; 
+            color: white; 
+            text-decoration: none; 
+            padding: 15px; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <img src="imagens\logo.png" alt="Via Bella Pizzaria" class="logo-img">
+        <div class="endereco">
+            Rua Moacir Tramarin, 15 - Jd. Santa Maria II<br>
+            <strong>Campinas - SP</strong><br>
+            (19) 3383-0731 | (19) 98925-8701
+        </div>
+    </header>
+
+    <div class="categoria-titulo">Nossas Pizzas</div>
+
+    <div class="item-cardapio">
+        <img src="imagens/calabresa.png" class="foto-pizza" alt="Pizza">
+        <div class="item-info">
+            <span class="preco">R$ 55,00</span>
+            <span class="nome-pizza">Frango com Catupiry</span>
+            <span class="descricao">Frango desfiado temperado, milho e o legítimo catupiry cremoso.</span>
+        </div>
+    </div>
+
+    <div class="item-cardapio">
+        <img src="imagens/portuguesa.png" class="foto-pizza" alt="Pizza">
+        <div class="item-info">
+            <span class="preco">R$ 52,00</span>
+            <span class="nome-pizza">Moda da Casa</span>
+            <span class="descricao">Presunto, mussarela, ovos, cebola e um toque de orégano especial.</span>
+        </div>
+    </div>
+
+    <div class="categoria-titulo">Bebidas & Drinks</div>
+
+    <div class="item-cardapio">
+        <img src="imagens/caipirinha.png" class="foto-pizza" alt="Drink">
+        <div class="item-info">
+            <span class="preco">R$ 18,00</span>
+            <span class="nome-pizza">Caipirinha de Limão</span>
+            <span class="descricao">Preparada na hora com limões frescos e gelo cristalino.</span>
+        </div>
+    </div>
+
+    <a href="https://wa.me/5519989258701" class="btn-whats">
+        FAZER PEDIDO PELO WHATSAPP
+    </a>
+
+    <p style="font-size: 11px; color: #999; margin-top: 30px;">
+        Via Bella Pizzaria &copy; 2026 - Campinas/SP<br>
+        Desenvolvido por [Seu Nome]
+    </p>
+</div>
+
+</body>
+</html>
