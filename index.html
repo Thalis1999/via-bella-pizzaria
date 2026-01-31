@@ -6,19 +6,24 @@
     <title>Via Bella Pizzaria - Cardápio</title>
     <style>
         * { box-sizing: border-box; }
-        body { 
-            font-family: Arial, Helvetica, sans-serif; 
-            margin: 0; 
-            padding: 0; 
-            background-color: #f2f2f2; 
-            display: flex; 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            display: flex;
             justify-content: center;
         }
+        .btn-whats:hover {
+            background-color: #128c7e;
+            transform: scale(1.02);
+            transition: 0.3s;
+        }
 
-        .container { 
-            width: 100%; 
-            max-width: 500px; 
-            background-color: #ffffff; 
+        .container {
+            width: 100%;
+            max-width: 500px;
+            background-color: #ffffff;
             min-height: 100vh;
             padding: 20px;
             text-align: center;
@@ -28,33 +33,33 @@
         /* Cabeçalho com a Logo enviada */
         .header { border-bottom: 5px solid #e31e24; padding-bottom: 20px; margin-bottom: 20px; }
         .logo-img { width: 200px; height: auto; display: block; margin: 0 auto; }
-        
+
         .endereco { font-size: 13px; color: #666; margin-top: 10px; line-height: 1.4; }
 
         /* Categorias */
-        .categoria-titulo { 
-            background-color: #008241; 
-            color: white; 
-            padding: 10px; 
-            font-weight: bold; 
-            margin: 25px 0 15px; 
+        .categoria-titulo {
+            background-color: #008241;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            margin: 25px 0 15px;
             text-transform: uppercase;
             border-radius: 4px;
         }
 
         /* Estilo dos Itens com Fotos */
-        .item-cardapio { 
-            border-bottom: 1px solid #eee; 
-            padding: 15px 0; 
+        .item-cardapio {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
             text-align: left;
             overflow: hidden;
         }
-        .foto-pizza { 
-            width: 80px; 
-            height: 80px; 
-            float: left; 
-            margin-right: 15px; 
-            border-radius: 8px; 
+        .foto-pizza {
+            width: 80px;
+            height: 80px;
+            float: left;
+            margin-right: 15px;
+            border-radius: 8px;
             object-fit: cover;
             border: 1px solid #ddd;
         }
@@ -64,14 +69,14 @@
         .descricao { font-size: 12px; color: #777; display: block; margin-top: 5px; }
 
         /* Botões Fixos */
-        .btn-whats { 
-            display: block; 
-            background-color: #25d366; 
-            color: white; 
-            text-decoration: none; 
-            padding: 15px; 
-            border-radius: 8px; 
-            font-weight: bold; 
+        .btn-whats {
+            display: block;
+            background-color: #25d366;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: bold;
             margin-top: 20px;
             font-size: 18px;
         }
@@ -81,7 +86,7 @@
 
 <div class="container">
     <header class="header">
-        <img src="imagens\logo.png" alt="Via Bella Pizzaria" class="logo-img">
+        <img src="img\logo.png" alt="Via Bella Pizzaria" class="logo-img">
         <div class="endereco">
             Rua Moacir Tramarin, 15 - Jd. Santa Maria II<br>
             <strong>Campinas - SP</strong><br>
@@ -92,7 +97,7 @@
     <div class="categoria-titulo">Nossas Pizzas</div>
 
     <div class="item-cardapio">
-        <img src="imagens/calabresa.png" class="foto-pizza" alt="Pizza">
+        <img src="img/calabresa.png" class="foto-pizza" alt="Pizza">
         <div class="item-info">
             <span class="preco">R$ 55,00</span>
             <span class="nome-pizza">Frango com Catupiry</span>
@@ -101,7 +106,7 @@
     </div>
 
     <div class="item-cardapio">
-        <img src="imagens/portuguesa.png" class="foto-pizza" alt="Pizza">
+        <img src="img/portuguesa.png" class="foto-pizza" alt="Pizza">
         <div class="item-info">
             <span class="preco">R$ 52,00</span>
             <span class="nome-pizza">Moda da Casa</span>
@@ -112,7 +117,7 @@
     <div class="categoria-titulo">Bebidas & Drinks</div>
 
     <div class="item-cardapio">
-        <img src="imagens/caipirinha.png" class="foto-pizza" alt="Drink">
+        <img src="img/caipirinha.png" class="foto-pizza" alt="Drink">
         <div class="item-info">
             <span class="preco">R$ 18,00</span>
             <span class="nome-pizza">Caipirinha de Limão</span>
@@ -120,13 +125,13 @@
         </div>
     </div>
 
-    <a href="https://wa.me/5519989258701" class="btn-whats">
-        FAZER PEDIDO PELO WHATSAPP
+    <a href="https://wa.me/5519983687613" class="btn-whats">
+        FAZER PEDIDO PELO WHATSAPP DA VÒ
     </a>
 
     <p style="font-size: 11px; color: #999; margin-top: 30px;">
         Via Bella Pizzaria &copy; 2026 - Campinas/SP<br>
-        Desenvolvido por [Seu Nome]
+        Desenvolvido por Thálisson
     </p>
 </div>
 
